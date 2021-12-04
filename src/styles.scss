@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
     --light-color-1: #ffffff;
+    --primary-color-1: #ff0019;
     --dark-color-1: #000000;
     --transparent-color: rgba(0, 0, 0, 0.582);
 }
@@ -38,6 +39,10 @@ main {
     padding: 0 25px;
 }
 
+.active a {
+    color: var(--primary-color-1);
+}
+
 img {
     display: block;
     width: 100%;
@@ -54,6 +59,7 @@ ul {
   
 a {
     text-decoration: none;
+    color: var(--light-color-1)
 }
   
 button {
