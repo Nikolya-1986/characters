@@ -1,0 +1,42 @@
+<section class="nav__container nav content">
+    <div class="nav__logo">
+        <a routerLink="">
+            <img [src]="logo" routerLink="">
+        </a>
+    </div>
+    <nav class="nav__navigation">
+        <ul>
+            <li 
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:true}"
+                >
+                <a routerLink="/registration">
+                    Registration
+                </a>
+            </li>
+            <li routerLinkActive="active">
+                <a routerLink="/login">
+                    Login
+                </a>
+            </li>
+            <li routerLinkActive="active">
+                <a 
+                    routerLink="/login"
+                    (click)="logout()"
+                    >
+                    Logout
+                </a>
+            </li>
+            <li routerLinkActive="active">
+                <a routerLink="/home">
+                    Home
+                </a>
+            </li>
+            <li routerLinkActive="active">
+                <a routerLink="/edition">
+                    Edition
+                </a>
+            </li>
+        </ul>
+    </nav>
+</section>
