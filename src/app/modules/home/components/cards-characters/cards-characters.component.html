@@ -1,0 +1,19 @@
+<section class="cards__container cards">
+    <div *ngIf="error else cardCharacter">
+        <strong>
+            Error from backend: {{ error }}
+        </strong>
+        <p>
+            You list cartoon characters is empty
+        </p>
+    </div>
+    <ng-template #cardCharacter>
+        <app-card-character
+            *ngFor="let character of characters"
+            [character]="character"
+            >
+
+        </app-card-character>
+    </ng-template>
+
+</section>
